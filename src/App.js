@@ -12,8 +12,9 @@ const [product, setProduct] = useState({
 
   return (
     <div>
+      <center></center>
       <form>
-        
+
       </form>
     </div>
   )
