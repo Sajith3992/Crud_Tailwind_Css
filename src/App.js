@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const App = () => {
 
   const [item, setItem] = useState([]);
@@ -21,8 +22,9 @@ const App = () => {
     
   };
  
-  const handleDelete =()=>{
-
+  const handleDelete =(param)=>{
+    const deleteItem = item.filter((item, index) => item.id !== param.id);
+    setItem([...deleteItem]);
   }
 
   return (
