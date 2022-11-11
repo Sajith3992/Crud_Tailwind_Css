@@ -34,7 +34,7 @@ const App = () => {
       <h1 className='uppercase text-2xl text-center'>add product</h1>
       <form onSubmit={handleSubmit}>
           <label className='block'>ID  </label>
-          <input
+          <input♣
                  name='id'
                  value={product.id}
                  onChange={handleChange}
@@ -74,7 +74,7 @@ const App = () => {
         {item.map((res, index) =>{
           return(
             <div className='bg-white p-5 rounded-xl' key={index}> 
-            <button className='float-right bg-red-500 px-2 text-white rounded-full'>
+            <button onClick={(handleDelete(res.id))} className='float-right bg-red-500 px-2 text-white rounded-full'>
             x </button>
             <div className='mt-6 text-center'>
               <div className='flex space-x-4 items-center'>
