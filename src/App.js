@@ -70,6 +70,9 @@ const [product, setProduct] = useState({
           return(
             <div className='bg-white p-5 ' key={index}> 
             <button className='float-right bg-red-500 px-2 text-white rounded-full'>i</button>
+            <div className='mt-6 text-center'>
+
+            </div>
             </div>
           )
         })}
