@@ -71,6 +71,7 @@ const [product, setProduct] = useState({
             <div className='bg-white p-5 ' key={index}> 
             <button className='float-right bg-red-500 px-2 text-white rounded-full'>i</button>
             <div className='mt-6 text-center'>
+              <div className='flex space-x-4 item-center'></div>
 
             </div>
             </div>
