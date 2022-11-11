@@ -11,7 +11,7 @@ const [product, setProduct] = useState({
 });
 
   return (
-    <div>
+    <div className="grid grid-cols-2">
       <center>
         <h2 className="text-3xl font-bold underline">Add Product</h2>
       </center>
