@@ -13,7 +13,7 @@ const [product, setProduct] = useState({
   return (
     <div>
       <center>
-        <h2>Center Product</h2>
+        <h2 className="text-3xl font-bold underline">Add Product</h2>
       </center>
       <form>
           <label>ID</label>
