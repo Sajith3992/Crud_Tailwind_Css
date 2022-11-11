@@ -13,6 +13,9 @@ const [product, setProduct] = useState({
   return (
     <div className="grid grid-cols-2">
     <div className='flex justify-center item-center'>
+      <div>
+        
+      </div>
       <form>
           <label>ID</label>
           <input placeholder='input product id'/>
