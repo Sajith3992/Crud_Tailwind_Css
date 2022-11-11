@@ -16,7 +16,7 @@ const [product, setProduct] = useState({
         <h2>Center Product</h2>
       </center>
       <form>
-
+          <label>ID</label>
       </form>
     </div>
   )
