@@ -12,7 +12,9 @@ const [product, setProduct] = useState({
 
   return (
     <div>
-      
+      <form>
+        
+      </form>
     </div>
   )
 }
