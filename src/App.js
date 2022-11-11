@@ -1,19 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const App = () => {
 
-const [item , setItem] = useState([])
-const [product, setProduct] = useState({
-  id: "",
-  name:"",
-  qty:"",
-  price:""
-
-});
+  const [item, setItem] = useState([]);
+  const [product, setProduct] = useState({
+    id: "",
+    name: "",
+    qty: "",
+    price: "",
+  });
 
   const handleChange = (e) =>{
-    setProduct({...product,[e.target.name]: e.target.value});
-  }
+    setProduct({...product, [e.target.name]: e.target.value});
+  };
 
   const handleSubmit = (e) =>{
     e.priventDetault();
@@ -21,7 +20,11 @@ const [product, setProduct] = useState({
     setItem([...item]);
     
   };
-  console.log("item", item);
+ 
+  const handleDelete =()=>{
+
+  }
+
   return (
     <div className="grid grid-cols-2 mt-56">
     <div className='flex justify-center item-center'>
@@ -65,16 +68,34 @@ const [product, setProduct] = useState({
       </div> 
       </div>
       <div className='px-4'>
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-3 gap-4'>
         {item.map((res, index) =>{
           return(
-            <div className='bg-white p-5 ' key={index}> 
+            <div className='bg-white p-5 rounded-xl' key={index}> 
             <button className='float-right bg-red-500 px-2 text-white rounded-full'>
             x </button>
             <div className='mt-6 text-center'>
               <div className='flex space-x-4 items-center'>
                 <h1>product ID:</h1>
-                <p className='text-xl'>{res.id}</p>
+                <p className="text-xl">{res.id}</p>
+              </div>
+            </div>
+            <div className='mt-6 text-center'>
+              <div className='flex space-x-4 items-center'>
+                <h1>product Name:</h1>
+                <p className="text-xl">{res.name}</p>
+              </div>
+            </div>
+            <div className='mt-6 text-center'>
+              <div className='flex space-x-4 items-center'>
+                <h1>product Quantity:</h1>
+                <p className="text-xl">{res.qty}</p>
+              </div>
+            </div>
+            <div className='mt-6 text-center'>
+              <div className='flex space-x-4 items-center'>
+                <h1>product Price:</h1>
+                <p className="text-xl">{res.price}</p>
               </div>
             </div>
             </div>
