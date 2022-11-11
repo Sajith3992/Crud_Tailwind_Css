@@ -17,6 +17,7 @@ const [product, setProduct] = useState({
 
   const handleSubmit = (e) =>{
     e.priventDetault();
+    item.push(product);
   }
   return (
     <div className="grid grid-cols-2 mt-56">
