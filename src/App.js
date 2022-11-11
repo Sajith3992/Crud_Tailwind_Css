@@ -25,7 +25,7 @@ const [product, setProduct] = useState({
     <div className='flex justify-center item-center'>
       <div className='bg-white  w-2/5 p-6 rounded'>
       <h1 className='uppercase text-2xl text-center'>add product</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
           <label className='block'>ID  </label>
           <input
                  name='id'
