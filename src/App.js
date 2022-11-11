@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+  
+const [product, setProduct] = useState;
+
   return (
     <div>
       
