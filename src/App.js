@@ -12,13 +12,15 @@ const [product, setProduct] = useState({
 
   return (
     <div className="grid grid-cols-2">
-      <center>
-        <h2 className="text-3xl font-bold underline">Add Product</h2>
-      </center>
+    <div>
       <form>
           <label>ID</label>
           <input placeholder='input product id'/>
       </form>
+      </div>
+      <div>
+        <h1>hello </h1>
+      </div>
     </div>
   )
 }
