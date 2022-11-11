@@ -20,8 +20,8 @@ const [product, setProduct] = useState({
     item.push(product);
     setItem([...item]);
     
-  }
-  console.log("item".item);
+  };
+  console.log("item", item);
   return (
     <div className="grid grid-cols-2 mt-56">
     <div className='flex justify-center item-center'>
@@ -64,28 +64,28 @@ const [product, setProduct] = useState({
       </form>
       </div> 
       </div>
-      <div className='px-6'>
+      <div className='px-4'>
         <div className='grid grid-cols-3'>
-        {item.map((res,index) =>{
+        {item.map((res, index) =>{
           return(
             <div className='bg-white p-5 ' key={index}> 
-            <button className='float-right bg-red-500 px-2 text-white rounded-full'>i</button>
+            <button className='float-right bg-red-500 px-2 text-white rounded-full'>
+            x </button>
             <div className='mt-6 text-center'>
-              <div className='flex space-x-4 item-center'>
-                <h2>product: ID</h2>
-                <p>{res.id}</p>
+              <div className='flex space-x-4 items-center'>
+                <h1>product ID:</h1>
+                <p className='text-xl'>{res.id}</p>
               </div>
-
             </div>
             </div>
-          )
+          );
         })}
         </div>
         
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default App
 
