@@ -11,6 +11,9 @@ const [product, setProduct] = useState({
 
 });
 
+  const handleChange = (e) =>{
+
+  }
   return (
     <div className="grid grid-cols-2 mt-56">
     <div className='flex justify-center item-center'>
