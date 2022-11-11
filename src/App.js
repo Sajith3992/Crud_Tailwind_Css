@@ -13,7 +13,7 @@ const [product, setProduct] = useState({
   return (
     <div className="grid grid-cols-2">
     <div className='flex justify-center item-center'>
-      <div>
+      <div className='bg-white  w-2/5 p-6 rounded'>
         
       </div>
       <form>
