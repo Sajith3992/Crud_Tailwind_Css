@@ -19,7 +19,9 @@ const [product, setProduct] = useState({
     e.priventDetault();
     item.push(product);
     setItem([...product]);
+    
   }
+  console.log("item".item);
   return (
     <div className="grid grid-cols-2 mt-56">
     <div className='flex justify-center item-center'>
