@@ -18,7 +18,7 @@ const [product, setProduct] = useState({
   const handleSubmit = (e) =>{
     e.priventDetault();
     item.push(product);
-    setItem([...product]);
+    setItem([...item]);
     
   }
   console.log("item".item);
