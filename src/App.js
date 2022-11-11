@@ -12,7 +12,7 @@ const [product, setProduct] = useState({
 });
 
   const handleChange = (e) =>{
-    setProduct({...product,[e.target.name]: e.target.valie});
+    setProduct({...product,[e.target.name]: e.target.value});
   }
   return (
     <div className="grid grid-cols-2 mt-56">
