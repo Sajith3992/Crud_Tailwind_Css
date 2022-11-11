@@ -68,7 +68,9 @@ const [product, setProduct] = useState({
         <div className='grid grid-cols-3'>
         {item.map((res,index) =>{
           return(
-            <div className='bg-white p-5 ' key={index}> </div>
+            <div className='bg-white p-5 ' key={index}> 
+            <button className='float-right bg-red-500 px-2 text-white rounded-full'>i</button>
+            </div>
           )
         })}
         </div>
