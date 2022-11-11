@@ -64,8 +64,15 @@ const [product, setProduct] = useState({
       </form>
       </div> 
       </div>
-      <div>
-        <h1>hello </h1>
+      <div className='px-6'>
+        <div className='grid grid-cols-3'>
+        {item.map((res,index) =>{
+          return(
+            <div className='bg-white p-5 ' key={index}> </div>
+          )
+        })}
+        </div>
+        
       </div>
     </div>
   )
