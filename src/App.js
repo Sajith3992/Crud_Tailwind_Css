@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  
+
+const [item , setItem] = useState([])
 const [product, setProduct] = useState({
   id: "",
   name:"",
