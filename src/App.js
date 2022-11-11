@@ -17,6 +17,7 @@ const [product, setProduct] = useState({
       </center>
       <form>
           <label>ID</label>
+          <input placeholder='input product id'/>
       </form>
     </div>
   )
